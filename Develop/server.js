@@ -3,8 +3,10 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const path = require('path');
+const apiRoutes = require('./public/assets/routes/apiRoutes');
+const htmlRoutes = require('./public/assets/routes/htmlRoutes');
 
-//put route requires here//
+
 
 
 // Middleware for parsing JSON and urlencoded form data
@@ -12,6 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //add use for routes here
+// app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 
 //Server initialization
