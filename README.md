@@ -10,7 +10,7 @@
 - [Questions](#questions)
 
 ## Description
-This is a simple note taking app that lets you add notes to a json file. It also allows you to delete notes.  This was a Project that helped me understand routes a little better as well as the importance of modularization. I am using Express.js to deal with the api calls and routes.
+This is a simple note taking app that lets you add notes to a json file. It also allows you to delete notes.  This was a Project that helped me understand routes a little better as well as the importance of modularization. I am using Express.js to deal with the api calls and routes. The program uses node to run the server, I am using the built in node functionality with fs(file system) and path to define paths. The routes are all broken up into seperate files to make editing easier.  The create new notes function located in the lib folder tackles the heavy lifting for the api routes.
 
 ## Installation
 simply visit the link to the deployed site https://taylors-note-taking-app-301b8f6019ba.herokuapp.com/notes
